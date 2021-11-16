@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -13,16 +14,28 @@
         background-position: center;
     }
 
+    .footer {
+        background-color: #022555;
+        background-size: cover;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .headerlogo {
+        align-items: center;
+    }
+
     .navigationmenu {
         font-family: Lato;
         background-color: #1d61a8;
-        padding: 5px;
+        padding: 0px;
         style: underline;
     }
     
     .main {
         font-family: Lato;
-        background-color: #1d61a8;
+        background-color: #022555;
+;
         color: white;
         text-align: center;
         line-height: 1.5;
@@ -45,17 +58,18 @@
     
     .data-box {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap:nowrap;
         justify-content: space-around;
-        max-width: 850px;
+        max-width: 750px;
         margin: auto;
     }
     
     .data {
         background-color: #022555;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 10px;
+        margin:20px;
         margin-top: 10px;
         margin-bottom: 20px;
         text-align: left;
@@ -71,42 +85,89 @@
         color: white;
         padding: 10px;
     }
+    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #022555;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+        background-color: #1d61a8;
+}
+    
 </style>
 
 
 <div class="navigationmenu">
-    <a class="t" href="https://kkaigle.github.io/bluestar">Home</a> &#160;
-    <a class="t" href="about.html">About Us</a> &#160;
-    <a class="t" href="ourfleet.html">Our Fleet</a> &#160;
-    <a class="t" href="pilots.html">Our Pilots</a> &#160;
-    <a class="t" href="departures.html">Departures</a> &#160;
-    <a class="t" href="policies.html">Policies</a> &#160;
-    <a class="t" href="https://discord.gg/bluestar-airlines">Discord</a> &#160;
-    </div>  
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="pilots.html">Pilots</a></li>
+  <li><a href="ourfleet.html">Our Fleet</a></li>
+  <li><a href="policies.html">Policies</a></li>
+  <li><a href="https://discord.gg/bluestar-airlines">Join our Discord</a></li>
+   <img class="logo" style="float:right" src="https://cdn.discordapp.com/attachments/825763741676077057/910132829965389854/croppedstencil.png" alt="headerlogo">
+</ul>
+</div> 
 
 <div class="main">
     <div class="header">
         <div class="title">
-            About BlueStar Airlines
+            About BlueStar
         </div>
-        <div>
             <img class="logo" src="https://media.discordapp.net/attachments/825763741676077057/908042205673979914/Untitled.png" alt="Bluestar logo">
         </div>
-        <div class="subtitle">
-            
-        </div>
-    </div>
-    <div>
-        Fleet table below
-        <br>
-        <br>
-        Our website is currently under construction. Please visit our discord to learn more about joining and flying for BlueStar Airlines. 
-        <br><br>
-        BlueStar is a worldwide Virtual Airline that uses economical addons such as OnAir, and Fly The World in order to enhance our flying experience. 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="main">
+<div class="data"> 
+    <div class="data-box">
+BlueStar is a fictional airline, derived from the 1987 film "Wall Street". <br><br>
+BlueStar Airlines has seen decades of turbulent times, ranging from an aircraft crash in 1984, repeated stock dumps, 
+lack of working capital and a revolving door of management. After the 1984 crash, all hope seemed to have been lost with BlueStar. 
+The FAA released findings of that tragic crash, stating that BlueStars Maintenance program was not actually at fault as once thought. 
+The incident was caused by a defective manufacturer latch on the airframe. 
+<br><br>
+After the FAA gave BlueStar the clearance to take to the skies again, wall-street stockbroker Bud Fox started pushing the stock 
+“BST” on his clients based on insider information. Fox’s father was an aircraft maintenance supervisor and union leader for the 
+company. Fox managed to catch the ear of wealthy Wall Street investor Gordon Gekko. 
+Even after the exoneration, BlueStar continued to struggle filling routes. Fox finally convinced Gekko to acquire BlueStar, and 
+provide it with a second chance at success. Gekko was wise to this, and decided to use his buying power to purchase the company 
+in the name of greed. The plan to gut the company, drain pension funds and dismantle the union was leaked out. Fox had to act fast 
+in order to prevent his father and the many long-time employees of BlueStar from losing everything. Fox contacted Gekko’s top enemy, 
+another wealthy investor by the name of Sir Larry Wildman. 
+<br><br>
+After this exchange, Fox was arrested on the charge of insider trading, but talked his way into being an informant for the FTC. 
+While wearing a wire, he captured an admission of guilt from Gekko, which in turn set Bud free, and Gordon to jail. 
+In February 2021, two wealthy airline pilots were offered the opportunity to acquire the remaining assets of BlueStar which 
+had remained idle due to ownership, union disputes, hiring freezes and lack of capital to jump-start flights once again. 
+<br><br>
+Korey and Alex acquired BlueStar at its lowest point in history and took 6 months to build it beyond what it ever was, 
+spanning North America and Europe, serving dozens of destinations. 
+<br><br>
 
+<b>“Greed, for lack of a better word, is good” Gordon Gekko</b>
     </div>
+
+   
+        <br><br><br><br><br><br>
+</div>
+<div class="footer">
+    Placeholder (footer)
 </div>
 
 </html>
-
