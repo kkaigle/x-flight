@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -13,16 +14,21 @@
         background-position: center;
     }
 
+    .headerlogo {
+        align-items: center;
+    }
+
     .navigationmenu {
         font-family: Lato;
         background-color: #1d61a8;
-        padding: 5px;
+        padding: 0px;
         style: underline;
     }
     
     .main {
         font-family: Lato;
-        background-color: #1d61a8;
+        background-color: #022555;
+;
         color: white;
         text-align: center;
         line-height: 1.5;
@@ -46,19 +52,20 @@
     .data-box {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap:nowrap;
         justify-content: space-around;
-        max-width: 850px;
+        max-width: 250px;
         margin: auto;
     }
     
     .data {
-        background-color: #022555;
-        border-radius: 5px;
+        background-color: #1d61a8;
+        border-radius: 10px;
         padding: 10px;
+        margin:20px;
         margin-top: 10px;
         margin-bottom: 20px;
-        text-align: left;
+        text-align: center;
         min-width: 200px;
     }
     
@@ -75,7 +82,7 @@
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   overflow: hidden;
   background-color: #022555;
 }
@@ -94,7 +101,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+        background-color: #1d61a8;
 }
     
 </style>
@@ -103,9 +110,12 @@ li a:hover {
 <div class="navigationmenu">
     <ul>
   <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
   <li><a href="pilots.html">Pilots</a></li>
   <li><a href="ourfleet.html">Our Fleet</a></li>
-  <li><a href="about.html">About</a></li>
+  <li><a href="Policies.html">Policies</a></li>
+  <li><a href="https://discord.gg/bluestar-airlines">Join our Discord</a></li>
+  <img class="logo" style="float:right" src="https://cdn.discordapp.com/attachments/825763741676077057/910132829965389854/croppedstencil.png" alt="headerlogo">
     </ul>
     </div>  
 
@@ -116,19 +126,31 @@ li a:hover {
         </div>
             <img class="logo" src="https://media.discordapp.net/attachments/825763741676077057/908042205673979914/Untitled.png" alt="Bluestar logo">
         </div>
-    <div class="main">
+<div class="main">
         <div class="subtitle">
         </div>
         <div>
-        <br>
-        <br>
-        Our website is currently under construction. <br> 
+        <br> 
     
         Please visit our discord to learn more about joining and flying for BlueStar Airlines. <br><br>
-    
-        <br><br><br><br><br><br>
+<div class="data-box">
+        <div class="data">
+        <b>All Simulator Platforms</b><br><br>
+
+        Regardless which simulator you play, BlueStar supports them. Prepar3d, Microsoft Flight Simulator X, Microsoft Flight Simualtor 2020 and X-Plane.
+        </div>
+        <div class="data">
+        <b>Persistent World</b><br><br>
+        BlueStar uses addon software to enhance our flying experience. These environments create challenge, and a persistent economy alongside other virtual airlines.
+    </div>
+    <div class="data">
+        <b>Experience</b><br><br>
+
+    All levels of experience are welcome in BlueStar. Our virtual pilots range from real world airline captains, to novice simulator players. 
+    </div>
+
+    <br><br><br><br><br><br>
 
     </div>
-</div>
 
 </html>
