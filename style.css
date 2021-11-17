@@ -30,7 +30,6 @@ body {
     font-family: Lato;
     background-color: #1d61a8;
     padding: 0px;
-    style: underline;
 }
 
 .title {
@@ -66,6 +65,10 @@ body {
     margin-bottom: 20px;
     text-align: center;
     min-width: 200px;
+}
+
+p {
+    max-width: 750px;
 }
 
 .button {
