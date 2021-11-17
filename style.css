@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background: url('https://images-ext-1.discordapp.net/external/IewbW1WW-n-e7GxmCx3nX9sNMD7K_C2t4LMCESQ9-3w/https/media.discordapp.net/attachments/825763741676077057/905508864919732274/unknown.png'), rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding-bottom: 50px;
+    background-position: center;
+}
+
+.headerlogo {
+    align-items: center;
+}
+
+.footer {
+    background-color: #022555;
+    background-size: cover;
+    padding: 25px;
+    align-items: center;
+}
+
+.navigationmenu {
+    font-family: Lato;
+    background-color: #1d61a8;
+    padding: 0px;
+    style: underline;
+}
+
+.main {
+    font-family: Lato;
+    background-color: #022555;
+    ;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title {
+    font-size: 36px;
+    padding: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.logo {
+    width: 15%;
+}
+
+.subtitle {
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.data-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 250px;
+    margin: auto;
+}
+
+.data {
+    background-color: #1d61a8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.button {
+    margin: 10px;
+}
+
+a {
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #022555;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #1d61a8;
+}

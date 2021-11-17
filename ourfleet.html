@@ -1,199 +1,194 @@
+<!DOCTYPE html>
+<html>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body {
-        margin: 0;
-    }
-    
-    .header {
-        background: url('https://images-ext-1.discordapp.net/external/IewbW1WW-n-e7GxmCx3nX9sNMD7K_C2t4LMCESQ9-3w/https/media.discordapp.net/attachments/825763741676077057/905508864919732274/unknown.png'), rgba(0, 0, 0, 0.2);
-        background-blend-mode: overlay;
-        background-size: cover;
-        padding-bottom: 50px;
-        background-position: center;
-    }
+<head>
+    <!--This imports the "Lato" font to the website-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
-    .footer {
-        background-color: #022555;
-        background-size: cover;
-        padding: 25px;
-        align-items: center;
-    }
+    <!--This is the common style file for the website-->
+    <link rel="stylesheet" href="style.css">
 
-    .headerlogo {
-        align-items: center;
-    }
+    <!--This script manage the header & footer-->
+    <script src="template-manager.js"></script>
+</head>
 
-    .navigationmenu {
-        font-family: Lato;
-        background-color: #1d61a8;
-        padding: 0px;
-        style: underline;
-    }
-    
-    .main {
-        font-family: Lato;
-        background-color: #022555;
-;
-        color: white;
-        text-align: center;
-        line-height: 1.5;
-    }
-    
-    .title {
-        font-size: 36px;
-        padding: 10px;
-        text-shadow: 2px 2px black;
-    }
-    
-    .logo {
-        width: 15%;
-    }
-    
-    .subtitle {
-        font-size: 30px;
-        text-shadow: 2px 2px black;
-    }
+<body>
+    <div class="content">
+        <div class="table">
 
-    .table {
-        justify-content: center;
-    }
-    
-    .data-box {
-        display: flex;
-        flex-direction: column;
-        flex-wrap:nowrap;
-        justify-content: space-around;
-        max-width: 750px;
-        margin: auto;
-    }
-    
-    .data {
-        background-color: #022555;
-        border-radius: 10px;
-        padding: 10px;
-        margin:20px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        text-align: left;
-        min-width: 200px;
-    }
-    
-    .table {
-        justify-content:center;
-    }
-
-    .button {
-        margin: 10px;
-
-    }
-    
-    a {
-        color: white;
-        padding: 10px;
-    }
-    
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px;
-  overflow: hidden;
-  background-color: #022555;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-        background-color: #1d61a8;
-}
-    
-</style>
-
-
-<div class="navigationmenu">
-    <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="pilots.html">Pilots</a></li>
-  <li><a href="ourfleet.html">Our Fleet</a></li>
-  <li><a href="policies.html">Policies</a></li>
-  <li><a href="https://discord.gg/bluestar-airlines">Join our Discord</a></li>
-   <img class="logo" style="float:right" src="https://cdn.discordapp.com/attachments/825763741676077057/910132829965389854/croppedstencil.png" alt="headerlogo">
-</ul>
-</div> 
-
-<div class="main">
-    <div class="header">
-        <div class="title">
-            Our Fleet
+            <style type="text/css">
+                table.tableizer-table {
+                    font-size: 15px;
+                    border: 1px solid #CCC;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    background-color: #68839e;
+                    color: white;
+                    justify-content: center;
+                    margin: auto;
+                }
+                
+                .tableizer-table td {
+                    padding: 4px;
+                    margin: 3px;
+                    border: 1px solid #CCC;
+                }
+                
+                .tableizer-table th {
+                    background-color: #1b84ec;
+                    color: #FFF;
+                    font-weight: bold;
+                }
+            </style>
+            <table class="tableizer-table">
+                <thead>
+                    <tr class="tableizer-firstrow">
+                        <th>Type</th>
+                        <th>Condition</th>
+                        <th>License</th>
+                        <th>C-Check Date</th>
+                        <th>C-Check Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bombardier CRJ700 ER</td>
+                        <td>96.46</td>
+                        <td>MPL</td>
+                        <td>4.2022</td>
+                        <td>1,788,480 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Douglas DC-3</td>
+                        <td>94.89</td>
+                        <td>CPL</td>
+                        <td>4.2022</td>
+                        <td>142,500 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Cessna 207 Stationair 8</td>
+                        <td>99.99</td>
+                        <td>PPL-A</td>
+                        <td>5.2022</td>
+                        <td>29,250 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Piper PA-28 Arrow</td>
+                        <td>99.98</td>
+                        <td>PPL-A</td>
+                        <td>4.2022</td>
+                        <td>9,900 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Beechcraft King Air 350</td>
+                        <td>99.35</td>
+                        <td>CPL</td>
+                        <td>2.2022</td>
+                        <td>300,000 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Bombardier CRJ700 ER</td>
+                        <td>97.31</td>
+                        <td>MPL</td>
+                        <td>3.2022</td>
+                        <td>1,788,480 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Cessna 208 Grand Caravan</td>
+                        <td>99.7</td>
+                        <td>CPL</td>
+                        <td>4.2022</td>
+                        <td>105,000 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Cessna Citation CJ4</td>
+                        <td>99.08</td>
+                        <td>CPL</td>
+                        <td>3.2022</td>
+                        <td>543,000 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * ACJ 320 neo</td>
+                        <td>98.12</td>
+                        <td>MPL</td>
+                        <td>11.2021</td>
+                        <td>8,250,410 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Boeing 737-200 Adv Executive</td>
+                        <td>97.85</td>
+                        <td>MPL</td>
+                        <td>12.2021</td>
+                        <td>9,000,000 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Douglas DC-6B</td>
+                        <td>99.97</td>
+                        <td>MPL</td>
+                        <td>5.2022</td>
+                        <td>684,267 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Airbus A321neo</td>
+                        <td>97.82</td>
+                        <td>MPL</td>
+                        <td>4.2022</td>
+                        <td>6,517,774 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Cessna 172 Skyhawk</td>
+                        <td>99.94</td>
+                        <td>PPL-A</td>
+                        <td>3.2022</td>
+                        <td>12,578 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Cessna Citation CJ4</td>
+                        <td>99.08</td>
+                        <td>CPL</td>
+                        <td>3.2022</td>
+                        <td>543,000 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * EC 145 T2</td>
+                        <td>99.6</td>
+                        <td>CPL</td>
+                        <td>4.2022</td>
+                        <td>270,900 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Boeing 737-800</td>
+                        <td>99.33</td>
+                        <td>MPL</td>
+                        <td>4.2022</td>
+                        <td>5,323,925 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>Cessna 172 Skyhawk</td>
+                        <td>99.95</td>
+                        <td>PPL-A</td>
+                        <td>5.2022</td>
+                        <td>12,578 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Airbus A320neo</td>
+                        <td>99.58</td>
+                        <td>MPL</td>
+                        <td>5.2022</td>
+                        <td>6,366,000 â‚¬</td>
+                    </tr>
+                    <tr>
+                        <td>* L/F * Bombardier Dash-8 Q400</td>
+                        <td>99.74</td>
+                        <td>MPL</td>
+                        <td>5.2022</td>
+                        <td>1,080,000 â‚¬</td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
         </div>
-            <img class="logo" src="https://media.discordapp.net/attachments/825763741676077057/908042205673979914/Untitled.png" alt="Bluestar logo">
-        </div>
-<br><br>
-<div class="table">
-    
-    <style type="text/css">
-            table.tableizer-table {
-                font-size: 15px;
-                border: 1px solid #CCC; 
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                background-color: #68839e;
-                color: white;
-                justify-content: center;
-                margin: auto;
-    
-            } 
-            .tableizer-table td {
-                padding: 4px;
-                margin: 3px;
-                border: 1px solid #CCC;
-            }
-            .tableizer-table th {
-                background-color: #1b84ec; 
-                color: #FFF;
-                font-weight: bold;
-            }
-        </style>
-        <table class="tableizer-table">
-        <thead><tr class="tableizer-firstrow"><th>Type</th><th>Condition</th><th>License</th><th>C-Check Date</th><th>C-Check Price</th></tr></thead><tbody>
-         <tr><td>Bombardier CRJ700 ER</td><td>96.46</td><td>MPL</td><td>4.2022</td><td>1,788,480 â‚¬</td></tr>
-         <tr><td>* L/F * Douglas DC-3</td><td>94.89</td><td>CPL</td><td>4.2022</td><td>142,500 â‚¬</td></tr>
-         <tr><td>Cessna 207 Stationair 8</td><td>99.99</td><td>PPL-A</td><td>5.2022</td><td>29,250 â‚¬</td></tr>
-         <tr><td>Piper PA-28 Arrow</td><td>99.98</td><td>PPL-A</td><td>4.2022</td><td>9,900 â‚¬</td></tr>
-         <tr><td>Beechcraft King Air 350</td><td>99.35</td><td>CPL</td><td>2.2022</td><td>300,000 â‚¬</td></tr>
-         <tr><td>* L/F * Bombardier CRJ700 ER</td><td>97.31</td><td>MPL</td><td>3.2022</td><td>1,788,480 â‚¬</td></tr>
-         <tr><td>* L/F * Cessna 208 Grand Caravan</td><td>99.7</td><td>CPL</td><td>4.2022</td><td>105,000 â‚¬</td></tr>
-         <tr><td>Cessna Citation CJ4</td><td>99.08</td><td>CPL</td><td>3.2022</td><td>543,000 â‚¬</td></tr>
-         <tr><td>* L/F * ACJ 320 neo</td><td>98.12</td><td>MPL</td><td>11.2021</td><td>8,250,410 â‚¬</td></tr>
-         <tr><td>* L/F * Boeing 737-200 Adv Executive</td><td>97.85</td><td>MPL</td><td>12.2021</td><td>9,000,000 â‚¬</td></tr>
-         <tr><td>Douglas DC-6B</td><td>99.97</td><td>MPL</td><td>5.2022</td><td>684,267 â‚¬</td></tr>
-         <tr><td>Airbus A321neo</td><td>97.82</td><td>MPL</td><td>4.2022</td><td>6,517,774 â‚¬</td></tr>
-         <tr><td>Cessna 172 Skyhawk</td><td>99.94</td><td>PPL-A</td><td>3.2022</td><td>12,578 â‚¬</td></tr>
-         <tr><td>Cessna Citation CJ4</td><td>99.08</td><td>CPL</td><td>3.2022</td><td>543,000 â‚¬</td></tr>
-         <tr><td>* L/F * EC 145 T2</td><td>99.6</td><td>CPL</td><td>4.2022</td><td>270,900 â‚¬</td></tr>
-         <tr><td>* L/F * Boeing 737-800</td><td>99.33</td><td>MPL</td><td>4.2022</td><td>5,323,925 â‚¬</td></tr>
-         <tr><td>Cessna 172 Skyhawk</td><td>99.95</td><td>PPL-A</td><td>5.2022</td><td>12,578 â‚¬</td></tr>
-         <tr><td>* L/F * Airbus A320neo</td><td>99.58</td><td>MPL</td><td>5.2022</td><td>6,366,000 â‚¬</td></tr>
-         <tr><td>* L/F * Bombardier Dash-8 Q400</td><td>99.74</td><td>MPL</td><td>5.2022</td><td>1,080,000 â‚¬</td></tr>
-        </tbody></table>
-        </table>
-</div>
-
-<div class="footer">
-    Placeholder (footer)
-</div>
+    </div>
+</body>
 
 </html>
