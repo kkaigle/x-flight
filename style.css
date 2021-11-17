@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    font-family: Lato;
+    background-color: #022555;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .header {
@@ -26,15 +31,6 @@ body {
     background-color: #1d61a8;
     padding: 0px;
     style: underline;
-}
-
-.main {
-    font-family: Lato;
-    background-color: #022555;
-    ;
-    color: white;
-    text-align: center;
-    line-height: 1.5;
 }
 
 .title {
