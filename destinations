@@ -1,1 +1,29 @@
+<html>
 
+<head>
+    <!--This imports the "Lato" font to the website-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <!--This is the common style file for the website-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--This script manage the header & footer-->
+    <script src="template-manager.js"></script>
+
+    <!--Set the title here 
+    vvvvvvvvvvvvvvvvvvvvvvv-->
+    <title>Our pilots</title>
+</head>
+
+<body>
+    <div class="content">
+        <!--This is the content of the page, when creating a new page, only change this
+        vvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
+<div>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mXd_LmrpuAWCKgD3uxZD9lsXyjVfsqvn" width="790" height="600"></iframe>
+        </div>
+        <!--^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    </div>
+</body>
+
+</html>
