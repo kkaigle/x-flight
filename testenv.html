@@ -1,53 +1,73 @@
- <div class="navigationmenu">
-          <div class="header-nav justify-content-lg-center">
-            <div class="header-nav-main header-nav-main-dark header-nav-main-effect-1 header-nav-main-sub-effect-1">
-              <nav class="collapse">
-                <ul class="nav flex-column flex-lg-row" id="mainNav">
-                  <li class="dropdown dropdown-mega">
-                    <a class="dropdown-item dropdown-toggle text-color-primary" href="https://www.flyspiritvirtual.com">
-                      Home
-                    </a>
-                  </li>
-                  <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle text-color-primary" href="#">
-                        Operation &nbsp<i class="fa fa-angle-down"></i>
-                      </a>
-                      <span class="menu-arrow"></span>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/roster">Pilot Roster</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/fleet">Our Fleet</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/liveflights">Live Flights</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/pireps">Recent PIREPs</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/departures">Upcoming Departures</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/destinations">Destinations</a></li>
-                      </ul>
-                  </li>
-                  <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle text-color-primary" href="#">
-                        About &nbsp<i class="fa fa-angle-down"></i>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/about">About Us</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/hubs">Our Hubs</a></li>
-                        <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/team">Our Team</a></li>
-                        <!-- <li><a class="dropdown-item" href="https://www.flyspiritvirtual.com/partners">Our Partners</a></li> -->
-                      </ul>
-                  </li>
-                  <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle text-color-primary" href="#">
-                        Social &nbsp<i class="fa fa-angle-down"></i>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://forum.flyspiritvirtual.com/">Forum</a></li>
-                        <li><a class="dropdown-item" href="https://discord.gg/MDgcEkszpA">Discord</a></li>
-                        <li><a class="dropdown-item" href="https://www.facebook.com/groups/flyspiritvirtual/">Facebook</a></li>
-                        <li><a class="dropdown-item" href="https://twitter.com/NKSVirtual">Twitter</a></li>
-                      </ul>
-                  </li>
-                  <li class="dropdown dropdown-mega">
-                    <a class="dropdown-item dropdown-toggle text-color-primary" href="https://www.flyspiritvirtual.com/contact">Contact</a>                   
-                  </li>
-                  
-                </ul>
-              </nav>
-            </div>
+ .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+<body>
+ 
+ <div class="navbar">
+  <div class="navbar a">
