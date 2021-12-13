@@ -20,6 +20,7 @@ body {
     background-size: cover;
     padding-bottom: 50px;
     background-position: center;
+    filter: blur(8px);
 }
 
 .banner {
