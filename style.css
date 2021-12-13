@@ -18,7 +18,7 @@ body {
     background: url('https://media.discordapp.net/attachments/814131923387023360/918225437954564177/unknown.png?width=1440&height=677'), rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     background-size: cover;
-    padding-bottom: 75%;
+    padding-bottom: 25%;
     background-position: center;
     filter: blur(2px);
 }
