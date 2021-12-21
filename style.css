@@ -37,8 +37,7 @@ body {
   width: 80%;
   padding: 20px;
   text-align: center;
-}
-    
+}   
 
 .banner {
     background: url('https://media.discordapp.net/attachments/814131923387023360/918225437954564177/unknown.png?width=1440&height=677'), rgba(0, 0, 0, 0.2);
@@ -105,17 +104,60 @@ body {
     min-width: 200px;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+{
+  box-sizing: border-box;
 }
 
-/* Clear floats after image containers */
-.row::after {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnfleet {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columnfleet {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cardfleet {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerfleet {
+  padding: 0 16px;
+}
+
+.containerfleet::after, .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.titlefleet {
+  color: grey;
+}
+
+.buttonfleet {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonfleet:hover {
+  background-color: #555;
 }
 
 p {
