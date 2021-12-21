@@ -1,6 +1,63 @@
 <html>
 
 <head>
+    <style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnfleet {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columnfleet {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cardfleet {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerfleet {
+  padding: 0 16px;
+}
+
+.containerfleet::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titlefleet {
+  color: grey;
+}
+
+.buttonfleet {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonfleet:hover {
+  background-color: #555;
+}
+</style>
     <!--This imports the "Lato" font to the website-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
