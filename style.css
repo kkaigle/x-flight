@@ -30,6 +30,7 @@ body {
 
 .active, .collapsible:hover {
   background-color: #858585;
+   width: 75%;
 }
 
 .collapsecontent {
