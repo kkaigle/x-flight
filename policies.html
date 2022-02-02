@@ -25,13 +25,47 @@
         <!--This is the content of the page, when creating a new page, only change this
         vvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
         <p>
-            <div class="button">
-                <a href="https://docs.google.com/document/d/e/2PACX-1vS3vOFJA_aQj5-vytA8Ts4XIamf1_o5Trts3hVznLvPhDfp7gKPtvVO3iM8_5_rbPhXxasyo1E4_WJY/pub">BlueStar Operating Procedure</a>
-            </div>
-            <iframe width=750 height=1000 src="https://docs.google.com/document/d/e/2PACX-1vS3vOFJA_aQj5-vytA8Ts4XIamf1_o5Trts3hVznLvPhDfp7gKPtvVO3iM8_5_rbPhXxasyo1E4_WJY/pub?embedded=true"></iframe>
-        </p>
-        <!--^^^^^^^^^^^^^^^^^^^^^^^^^-->
-    </div>
+            <h2>Collapsibles</h2>
+
+<p>A Collapsible:</p>
+<button type="button" class="collapsible">Open Collapsible</button>
+<div class="collapsecontent">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>Collapsible Set:</p>
+<button type="button" class="collapsible">Open Section 1</button>
+<div class="collapsecontent">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="collapsecontent">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="collapsecontent">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
+                        
+            
 
 </html>
