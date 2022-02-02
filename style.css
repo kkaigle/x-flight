@@ -14,6 +14,29 @@ body {
     min-height: 100%;
 }
 
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsecontent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
 .header {
     background: url('https://media.discordapp.net/attachments/814131923387023360/918225437954564177/unknown.png?width=1440&height=677'), rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
