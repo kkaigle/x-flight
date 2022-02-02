@@ -14,12 +14,14 @@ body {
     min-height: 100%;
 }
 
+/* HERE ARE THE STYLES FOR COLLAPSIBLE BANNERS*/
+
 .collapsible {
-  background-color: #777;
+  background-color: #25618D;
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 75%;
   border: none;
   text-align: left;
   outline: none;
@@ -27,7 +29,7 @@ body {
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #858585;
 }
 
 .collapsecontent {
