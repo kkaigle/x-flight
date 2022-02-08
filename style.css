@@ -14,6 +14,9 @@ body {
     min-height: 100%;
 }
 /* HERE ARE THE STYLES FOR THE FLEET INVENTORY*/
+* {
+  box-sizing: border-box;
+}
 
 .fleetmain {
   max-width: 1000px;
