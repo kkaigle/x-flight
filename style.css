@@ -145,6 +145,7 @@ h1 {
     background-size: cover;
     padding-bottom: 50px;
     background-position: center;
+    overflow: hidden;
 }
 
 .headerlogo {
