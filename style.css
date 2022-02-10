@@ -28,9 +28,10 @@ body {
 .staffcolumn {
   float: left;
   width: 200px;
-  height: 
+  height: 400px;
   margin-bottom: 16px;
   padding: 0 8px;
+  margin: auto;
 }
 
 @media screen and (max-width: 650px) {
