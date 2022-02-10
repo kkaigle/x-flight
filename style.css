@@ -22,6 +22,47 @@ body {
     flex-direction: column;
     min-height: 100%;
 }
+
+/*HERE ARE STYLES FOR THE STAFF SECTION*/
+
+.staffcolumn {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .staffcolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+.staffcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #56B2D3; 
+  color: #56B2D3; 
+}
+
+.staffcontainer {
+  padding: 0 16px;
+  background: black;
+}
+
+.staffcontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.stafftitle {
+  color: grey;
+}
+
+
+
+
 /* HERE ARE THE STYLES FOR THE FLEET INVENTORY*/
 * {
   box-sizing: border-box;
