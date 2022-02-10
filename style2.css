@@ -108,9 +108,10 @@ h1 {
   display: none;
   overflow: hidden;
   width: 75%;
-  background-color: #9AAAB1;
+  background-color: #44A5DD;
   align-content: center;
   margin: auto;
+  color: black;
 }
 
 /*HERE IS GENERAL SITE CONTENT COLOR SCHEMES MAIN: 3F759F BOX: 56B2D3 DECORATIVE: 9AAAB1 TEXT: WHITE*/
