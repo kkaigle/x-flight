@@ -5,6 +5,7 @@ html {
 /*HERE IS GENERAL CONTENT ASSETS FOR THE WEBSITES*/
 
 .websitecontent {
+       margin: auto;
        width: 75%;
        text-align: center;
 
