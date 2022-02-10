@@ -26,12 +26,11 @@ body {
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
 
 .staffcolumn {
-  float: left;
+  float: center;
   width: 200px;
   height: 400px;
   margin-bottom: 16px;
   padding: 0 8px;
-  margin: auto;
 }
 
 @media screen and (max-width: 650px) {
