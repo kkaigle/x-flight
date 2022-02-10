@@ -110,7 +110,10 @@ h1 {
   width: 75%;
   background-color: #f1f1f1;
   align-content: center;
+  margin: auto;
 }
+
+/*HERE IS GENERAL SITE CONTENT*/
 
 .header {
     background: url('https://media.discordapp.net/attachments/825763741676077057/905508864919732274/unknown.png?width=1108&height=555'), rgba(0, 0, 0, 0.2);
