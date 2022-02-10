@@ -54,7 +54,7 @@ h1 {
 
 /* Content */
 .fleetcontent {
-  background-color: #68BEDE;
+  background-color: #5EB9E0;
   padding: 10px;
 }
 
@@ -87,7 +87,7 @@ h1 {
 /* HERE ARE THE STYLES FOR COLLAPSIBLE BANNERS (RULES)*/
 
 .collapsible {
-  background-color: #25618D;
+  background-color: #5EB9E0;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -99,7 +99,7 @@ h1 {
 }
 
 .active, .collapsible:hover {
-  background-color: #858585;
+  background-color: #9AAAB1;
    width: 75%;
 }
 
@@ -113,7 +113,7 @@ h1 {
   margin: auto;
 }
 
-/*HERE IS GENERAL SITE CONTENT*/
+/*HERE IS GENERAL SITE CONTENT COLOR SCHEMES MAIN: 3F759F BOX: 5EB9E0 DECORATIVE: 9AAAB1 TEXT: WHITE*/
 
 .header {
     background: url('https://media.discordapp.net/attachments/825763741676077057/905508864919732274/unknown.png?width=1108&height=555'), rgba(0, 0, 0, 0.2);
@@ -216,7 +216,7 @@ ul {
     margin: 0;
     padding: 5px;
     overflow: hidden;
-    background-color: #022555;
+    background-color: #3F759F;
 }
 
 li {
