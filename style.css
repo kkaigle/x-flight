@@ -121,6 +121,7 @@ h1 {
     padding-bottom: 25%;
     background-position: center;
     filter: blur(0px);
+    overflow: hidden;
 }
 
 .bg-text {
