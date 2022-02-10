@@ -21,6 +21,7 @@ body {
 .fleetmain {
   max-width: 1000px;
   margin: auto;
+  box-shadow: 5px 10px 8px #88888;
   
 }
 
@@ -57,7 +58,6 @@ h1 {
 .fleetcontent {
   background-color: #68BEDE;
   padding: 10px;
-  box-shadow: 5px 10px 8px #88888;
 }
 
 /* The "show" class is added to the filtered elements */
