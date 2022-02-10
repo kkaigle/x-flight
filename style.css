@@ -163,6 +163,7 @@ h1 {
     background-color: #3F759F;
     padding: 0px;
     align-items: right;
+    position: fixed;
 }
 
 .title {
