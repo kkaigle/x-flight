@@ -26,7 +26,7 @@ body {
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
 
 .staffcolumn {
-  float: center;
+  float: left;
   width: 200px;
   height: 400px;
   margin-bottom: 16px;
@@ -43,12 +43,14 @@ body {
 .staffcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #56B2D3; 
-  color: #56B2D3; 
+  color: #56B2D3;
+  margin: auto;
 }
 
 .staffcontainer {
   padding: 0 16px;
   background: black;
+  
 }
 
 .staffcontainer::after, .row::after {
