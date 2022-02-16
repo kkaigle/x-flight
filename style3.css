@@ -243,8 +243,10 @@ h1 {
     overflow: hidden;
 }
 
+/*FOOTER ELEMENTS*/
+
 .footer {
-    background-color: #3F759F;
+    background-color: #BCDEF1;
     background-size: cover;
     padding: 25px;
     align-items: center;
