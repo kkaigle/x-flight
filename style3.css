@@ -215,7 +215,11 @@ h1 {
   overflow: hidden;
   width: 75%;
   background-color: #f1f1f1;
-  align-content: center;
+  align-content: left;
+  text-align: left;
+  margin: auto;
+  color: black;
+    
 }
 
 .bg-text {
