@@ -11,7 +11,7 @@ var callback = function() {
             content.className = content.className + ' visible';
         }
     };
-    headerRequest.open("GET", "header.html", true);
+    headerRequest.open("GET", "sidenav.html", true);
     headerRequest.send();
 
     let footerRequest = new XMLHttpRequest();
