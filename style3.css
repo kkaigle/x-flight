@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+}
+
+/*HERE IS GENERAL CONTENT ASSETS FOR THE WEBSITES*/
+
+.websitecontent {
+       margin: auto;
+       width: 75%;
+       text-align: center;
+
+}
+
+body {
+    margin: 0;
+    font-family: Lato;
+    background-color: #3F759F;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/*HERE ARE STYLES FOR THE STAFF SECTION*/
+
+.staffcolumn {
+  float: left;
+  width: 200px;
+  height: 400px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .staffcolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+.staffcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #56B2D3; 
+  color: #56B2D3;
+  margin: auto;
+}
+
+.staffcontainer {
+  padding: 0 16px;
+  background: black;
+  
+}
+
+.staffcontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.stafftitle {
+  color: grey;
+}
+
+
+
+
+/* HERE ARE THE STYLES FOR THE FLEET INVENTORY*/
+* {
+  box-sizing: border-box;
+}
+
+.fleetmain {
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 5px 10px 8px #88888;
+  
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.fleetrow {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.fleetrow,
+.fleetrow > .fleetcolumn {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.fleetcolumn {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.fleetrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.fleetcontent {
+  background-color: #68BEDE;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.fleetshow {
+  display: block;
+}
+
+/* Style the buttons */
+.fleetbtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.fleetbtn:hover {
+  background-color: #ddd;
+}
+
+.fleetbtn.active {
+  background-color: #666;
+  color: white;
+  padding: 12px 16px;
+  width: auto;
+}
+
+
+/* HERE ARE THE STYLES FOR COLLAPSIBLE BANNERS (RULES)*/
+
+.collapsible {
+  background-color: #25618D;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #858585;
+   width: 75%;
+}
+
+.collapsecontent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  width: 75%;
+  background-color: #f1f1f1;
+  align-content: center;
+}
+
+.header {
+    background: url('https://user-images.githubusercontent.com/83706649/153409607-e801bff8-7830-4461-b2bc-587642939623.png'), rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding-bottom: 25%;
+    background-position: center;
+    filter: blur(0px);
+    overflow: hidden;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: lightblue;
+  font-weight: bold;
+  border: 3px solid lightblue;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}   
+
+.banner {
+    background: url('https://user-images.githubusercontent.com/83706649/153409607-e801bff8-7830-4461-b2bc-587642939623.png'), rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding-bottom: 50px;
+    background-position: center;
+    overflow: hidden;
+}
+
+.headerlogo {
+    align-items: center;
+}
+
+.footer {
+    background-color: #3F759F;
+    background-size: cover;
+    padding: 25px;
+    align-items: center;
+}
+
+.navigationmenu {
+    font-family: Lato;
+    background-color: #3F759F;
+    padding: 0px;
+    align-items: left;
+}
+
+.title {
+    font-size: 36px;
+    padding: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.logo {
+    width: 15%;
+}
+
+.subtitle {
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.content {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.data-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 250px;
+    margin: auto;
+}
+
+.data {
+    background-color: #1d61a8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 200px;
+}
+
+
+a {
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #3F759F;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #1d61a8;
+}
