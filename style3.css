@@ -219,16 +219,6 @@ h1 {
   align-content: center;
 }
 
-.header {
-    background: url('https://user-images.githubusercontent.com/83706649/153409607-e801bff8-7830-4461-b2bc-587642939623.png'), rgba(0, 0, 0, 0.2);
-    background-blend-mode: overlay;
-    background-size: cover;
-    padding-bottom: 25%;
-    background-position: center;
-    filter: blur(0px);
-    overflow: hidden;
-}
-
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
