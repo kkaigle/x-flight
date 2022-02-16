@@ -15,7 +15,7 @@ body {
     margin: 0;
     font-family: Lato;
     background-color: #BCDEF1;
-    color: white;
+    color: black;
     text-align: center;
     line-height: 1.5;
     display: flex;
@@ -114,7 +114,6 @@ div.content {
 .stafftitle {
   color: grey;
 }
-
 
 
 
@@ -244,22 +243,11 @@ h1 {
     overflow: hidden;
 }
 
-.headerlogo {
-    align-items: center;
-}
-
 .footer {
     background-color: #3F759F;
     background-size: cover;
     padding: 25px;
     align-items: center;
-}
-
-.navigationmenu {
-    font-family: Lato;
-    background-color: #3F759F;
-    padding: 0px;
-    align-items: left;
 }
 
 .title {
