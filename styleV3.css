@@ -330,27 +330,7 @@ h1 {
     flex-grow: 1;
 }
 
-.data-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    max-width: 250px;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.data {
-    background-color: #1d61a8;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    min-width: 200px;
-}
-
+/*STYLES FOR LISTS*/
 
 a {
     color: white;
