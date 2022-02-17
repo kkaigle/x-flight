@@ -25,6 +25,10 @@ body {
 
 /*STYLES FOR COUNTER CARDS ON HOMEPAGE*/
 
+* {
+  box-sizing: border-box;
+}
+
 /* Float four columns side by side */
 .countercolumn {
   float: left;
