@@ -75,7 +75,7 @@ body, html {
 
 /* Float four columns side by side */
 .countercolumn {
-  float: left;
+  float: center;
   width: 25%;
   padding: 0 5px;
 }
