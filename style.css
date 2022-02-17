@@ -164,7 +164,39 @@ h1 {
   overflow: hidden;
   width: 75%;
   background-color: #f1f1f1;
-  align-content: center;
+  align-content: left;
+  text-align: left;
+  margin: auto;
+  color: black;
+    
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: lightblue;
+  font-weight: bold;
+  border: 3px solid lightblue;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}   
+
+
+/*END OF COLLAPSIBLE BANNER STYLES*/ 
+
+.banner {
+    background: url('https://user-images.githubusercontent.com/83706649/153409607-e801bff8-7830-4461-b2bc-587642939623.png'), rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding-bottom: 50px;
+    background-position: center;
+    overflow: hidden;
 }
 
 .header {
