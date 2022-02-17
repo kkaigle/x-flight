@@ -75,9 +75,10 @@ body, html {
 
 /* Float four columns side by side */
 .countercolumn {
-  float: center;
+  float: left;
   width: 25%;
   padding: 0 5px;
+  margin: auto;
 }
 
 .counterrow {margin: 0 -5px;}
