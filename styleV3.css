@@ -32,7 +32,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.discordapp.net/attachments/825763741676077057/930625420154515507/unknown.png");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
