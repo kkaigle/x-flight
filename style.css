@@ -251,8 +251,7 @@ h1 {
   overflow: hidden;
   background-color: #333;
   position: fixed;
-  z-index: 100;
-    top: 0;
+  top: 0;
   width: 100%;
  
 }
