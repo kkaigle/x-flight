@@ -121,6 +121,7 @@ body {
   max-width: 1000px;
   margin: auto;
   box-shadow: 5px 10px 8px #88888;
+  border-radius: 15px;
   
 }
 
