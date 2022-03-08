@@ -39,9 +39,10 @@ body {
   background-color: #547F97;
   color: white;
   border: 1px solid black;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   border-radius: 10px;
+  
 }
 
 /*ASSETS FOR DISCORD CONTAINER*/
