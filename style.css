@@ -23,6 +23,115 @@ body {
     min-height: 100%;
 }
 
+/*HERE ARE STYLES FOR THE AIRLINE OVERVIEW CONTAINER*/
+
+@use postcss-preset-env {
+  stage: 0
+}
+
+:root { 
+  --hue: 200;
+
+  --surface: hsl(var(--hue) 20% 10%);
+  --surface2: hsl(var(--hue) 20% 95%);
+
+  --text: hsl(var(--hue) 20% 90%);
+  --text2: hsl(var(--hue) 30% 30%);
+  --text3: hsl(var(--hue) 20% 20%);
+} 
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem;
+
+  background: var(--surface);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+section {
+  display: grid;
+  gap: 4ch;
+  color: var(--text3);
+  background: var(--surface2);
+  border-radius: 1ex;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  @media (min-width: 480px) {
+    padding: 2rem;
+  } 
+
+  & h2 {
+    font-size: 1.25rem;
+  }
+
+  & h3 {
+    font-size: 1rem;
+  }
+
+  & small {
+    display: inline-block;
+    max-inline-size: 40ch;
+    color: hsl(0 0% 40%);
+  }
+}
+
+.stats {
+  --columns: 1;
+  display: grid;
+  gap: 2ch 1ch;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @media (min-width: 480px) {
+    --columns: 2;
+  }
+
+  @media (min-width: 720px) {
+    --columns: 4;
+  }
+}
+
+.stat-group {
+  display: grid;
+  gap: 2ch;
+
+  & > header {
+    display: grid;
+    gap: 1ch;
+  }
+}
+
+.stats-item {
+
+  & > .label {
+    color: var(--text2);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  & > .stat {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: .9;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+h2,h3,p {
+  margin: 0;
+}
+
+
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
 
 .staffcolumn {
