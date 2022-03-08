@@ -47,6 +47,8 @@ body {
 /*ASSETS FOR DISCORD CONTAINER*/
 
 .discord-container {
+   display: flex;
+  flex-direction: left;
   display: grid;
   gap: 10px;
   background-color: #555758;
