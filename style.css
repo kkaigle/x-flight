@@ -1,6 +1,8 @@
 html {
     height: 100%;
 }
+/*COLORS: BACKGROUND: #555758, TEXT: WHITE, SECONDARY CONTAINERS: #547F97, BORDERS: #000000*/
+
 
 /*HERE IS GENERAL CONTENT ASSETS FOR THE WEBSITES*/
 
@@ -14,7 +16,7 @@ html {
 body {
     margin: 0;
     font-family: Lato;
-    background-color: #3F759F;
+    background-color: #555758;
     color: white;
     text-align: center;
     line-height: 1.5;
@@ -25,112 +27,22 @@ body {
 
 /*HERE ARE STYLES FOR THE AIRLINE OVERVIEW CONTAINER*/
 
-@use postcss-preset-env {
-  stage: 0
-}
-
-:root { 
-  --hue: 200;
-
-  --surface: hsl(var(--hue) 20% 10%);
-  --surface2: hsl(var(--hue) 20% 95%);
-
-  --text: hsl(var(--hue) 20% 90%);
-  --text2: hsl(var(--hue) 30% 30%);
-  --text3: hsl(var(--hue) 20% 20%);
-} 
-
-html {
-  block-size: 100%;
-  inline-size: 100%;
-}
-
-body {
-  min-block-size: 100%;
-  min-inline-size: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 2rem;
-
-  background: var(--surface);
-  color: var(--text);
-  font-family: system-ui, sans-serif;
-}
-
-section {
+.statsgrid-container {
   display: grid;
-  gap: 4ch;
-  color: var(--text3);
-  background: var(--surface2);
-  border-radius: 1ex;
-  padding: 1rem;
-  box-sizing: border-box;
-
-  @media (min-width: 480px) {
-    padding: 2rem;
-  } 
-
-  & h2 {
-    font-size: 1.25rem;
-  }
-
-  & h3 {
-    font-size: 1rem;
-  }
-
-  & small {
-    display: inline-block;
-    max-inline-size: 40ch;
-    color: hsl(0 0% 40%);
-  }
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #555758;
+  padding: 10px;
 }
 
-.stats {
-  --columns: 1;
-  display: grid;
-  gap: 2ch 1ch;
-  grid-template-columns: repeat(var(--columns), 1fr);
-
-  @media (min-width: 480px) {
-    --columns: 2;
-  }
-
-  @media (min-width: 720px) {
-    --columns: 4;
-  }
+.statsgrid-container > div {
+  background-color: #547F97;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
 }
-
-.stat-group {
-  display: grid;
-  gap: 2ch;
-
-  & > header {
-    display: grid;
-    gap: 1ch;
-  }
-}
-
-.stats-item {
-
-  & > .statslabel {
-    color: var(--text2);
-    text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: 600;
-  }
-
-  & > .stat {
-    font-size: 3.25rem;
-    font-weight: 700;
-    line-height: .9;
-    font-variant-numeric: tabular-nums;
-  }
-}
-
-h2,h3,p {
-  margin: 0;
-}
-
 
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
 
@@ -151,8 +63,8 @@ h2,h3,p {
 
 .staffcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #56B2D3; 
-  color: #56B2D3;
+  background-color: #547F97; 
+  color: white;
   margin: auto;
 }
 
