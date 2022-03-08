@@ -48,7 +48,6 @@ body {
 
 .discord-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
   gap: 10px;
   background-color: #555758;
   padding: 10px;
@@ -69,11 +68,12 @@ body {
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
 
 .staffcolumn {
-  float: left;
-  width: 200px;
-  height: 400px;
-  margin-bottom: 16px;
-  padding: 0 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 250px;
+    margin: auto;
   justify: center;
 }
 
