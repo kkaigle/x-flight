@@ -66,6 +66,25 @@ body {
   padding: 5px;
 }
 
+.section3-container {
+ display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  background-color: #555758;
+  padding: 10px;
+  justify-content: right;
+}
+
+.section3-container > div {
+  background-color: #547F97;
+  color: black;
+  border: 1px solid black;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
 
