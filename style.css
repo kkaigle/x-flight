@@ -68,11 +68,10 @@ body {
 
 .section3-container {
   display: grid;
+  grid-template-columns: auto auto auto
   gap: 10px;
   background-color: #555758;
   padding: 10px;
-  justify-content: center;
-   width: 100%;
 }
 
 .section3-container > div {
@@ -83,7 +82,6 @@ body {
   font-size: 15px;
   border-radius: 10px;
   padding: 5px;
-  width: 100%;
 }
 
 
