@@ -72,7 +72,8 @@ body {
   gap: 10px;
   background-color: #555758;
   padding: 10px;
-  justify-content: right;
+  justify-content: center;
+   width: 100%;
 }
 
 .section3-container > div {
