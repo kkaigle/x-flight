@@ -333,6 +333,10 @@ h1 {
   font-size: 17px;
 }
 
+ .navbar a.right {
+     float: right;
+}
+
 .navbar a:hover {
   background: #ddd;
   color: black;
