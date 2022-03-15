@@ -31,7 +31,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
-  background-color: #555758;
+  background-color: #333;
   padding: 10px;
 }
 
@@ -51,7 +51,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
-  background-color: #555758;
+  background-color: #333;
   padding: 10px;
   justify-content: right;
 }
@@ -71,7 +71,7 @@ body {
   grid-template-columns: auto auto auto auto;
   width: 100%;
   gap: 10px;
-  background-color: #555758;
+  background-color: #333;
   padding: 10px;
 }
 
@@ -87,48 +87,6 @@ body {
 
 
 /*HERE ARE STYLES FOR THE STAFF SECTION*/
-
-.staffcolumn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    max-width: 250px;
-    margin: auto;
-  justify: center;
-}
-
-@media screen and (max-width: 650px) {
-  .staffcolumn {
-    width: 100%;
-    display: block;
-  }
-}
-
-.staffcard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #547F97; 
-  color: black;
-  margin: auto;
-}
-
-.staffcontainer {
-  padding: 0 16px;
-  background: black;
-  
-}
-
-.staffcontainer::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.stafftitle {
-  color: grey;
-}
-
-
 
 
 /* HERE ARE THE STYLES FOR THE FLEET INVENTORY*/
@@ -327,7 +285,7 @@ h1 {
 .navbar a {
   float: left;
   display: block;
-  color: #333;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
