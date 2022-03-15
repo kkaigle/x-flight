@@ -16,7 +16,7 @@ html {
 body {
     margin: 0;
     font-family: Lato;
-    background-color: #333;
+    background-color: #717478;
     color: black;
     text-align: center;
     line-height: 1.5;
@@ -69,9 +69,7 @@ body {
 .section3-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 100%;
   gap: 10px;
-  background-color: #333;
   padding: 10px;
 }
 
@@ -274,7 +272,7 @@ h1 {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #717478;
   position: fixed;
   z-index: 100;
   top: 0;
