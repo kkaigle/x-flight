@@ -31,7 +31,6 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
-  background-color: #333;
   padding: 10px;
 }
 
@@ -51,7 +50,6 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
-  background-color: #333;
   padding: 10px;
   justify-content: right;
 }
@@ -68,9 +66,10 @@ body {
 
 .section3-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
   gap: 10px;
   padding: 10px;
+  justify-content: center;
 }
 
 .section3-container > div {
