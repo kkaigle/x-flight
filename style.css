@@ -271,7 +271,7 @@ h1 {
 
 .navbar {
   overflow: hidden;
-  background-color: #717478;
+  background-color: #092150;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -282,7 +282,7 @@ h1 {
 .navbar a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -294,8 +294,8 @@ h1 {
 }
 
 .navbar a:hover {
-  background: #547F97;
-  color: black;
+  background: #56b8e4;
+  color: white;
 }
 
 /*WEBSITE ASSET STYLES NOT INCLUDED ELSEWHERE*/
