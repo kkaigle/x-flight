@@ -16,7 +16,7 @@ html {
 body {
     margin: 0;
     font-family: Lato;
-    background-color: #717478;
+    background-color: #092150;
     color: black;
     text-align: center;
     line-height: 1.5;
@@ -35,7 +35,7 @@ body {
 }
 
 .statsgrid-container > div {
-  background-color: #547F97;
+  background-color: #56b8e4;
   color: black;
   border: 1px solid black;
   text-align: center;
@@ -55,7 +55,7 @@ body {
 }
 
 .discord-container > div {
-  background-color: #547F97;
+  background-color: #56b8e4;
   color: black;
   border: 1px solid black;
   text-align: left;
@@ -73,7 +73,7 @@ body {
 }
 
 .section3-container > div {
-  background-color: #547F97;
+  background-color: #56b8e4;
   color: black;
   border: 1px solid black;
   text-align: center;
@@ -163,7 +163,7 @@ h1 {
 /* HERE ARE THE STYLES FOR COLLAPSIBLE BANNERS (RULES)*/
 
 .collapsible {
-  background-color: #547F97;
+  background-color: #56b8e4;
   color: black;
   cursor: pointer;
   padding: 18px;
