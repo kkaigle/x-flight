@@ -7,80 +7,236 @@
 
     <!--This is the common style file for the website-->
     <link rel="stylesheet" href="style.css">
-    
-    <!--This imports Font Awesome abilities to the website-->
-    <script src="https://kit.fontawesome.com/c0e1a20f99.js" crossorigin="anonymous"></script>
 
     <!--This script manage the header & footer-->
     <script src="template-manager.js"></script>
-    
-    <!--This is the favicon for the header of this page-->
-    <link rel="icon" href="https://user-images.githubusercontent.com/83706649/157738885-22fb645a-3744-4b1c-a8d4-3fd4955059ac.png" type="image/x-icon">
 
-    <!--Set the title here 
-    vvvvvvvvvvvvvvvvvvvvvvv-->                                 
-</head>      
-<body>    
+    <!--Set the title here
+    vvvvvvvvvvvvvvvvvvvvvvv-->                                  
+
+    </head>
+<body>
     <div class="content">
         <!--This is the content of the page, when creating a new page, only change this
-        vvvvvvvvvvvvvvvvvvvvvvvvvvvvv--> 
- 
-    <h2>Airline Statistics</h2>
-<div class="statsgrid-container">
-  <div><i class="fa-solid fa-user-pilot"></i>Pilots<br>25</div>
-  <div><i class="fa-solid fa-plane-departure"></i>Flights<br>2,604</div>
-  <div><i class="fa-solid fa-timer"></i>Flight Hours<br>6,285</div>  
-  <div><i class="fa-solid fa-globe"></i>Distance Flown<br>2,877,247 nm</div>
-</div>
-         <h2>Monthly Statistics</h2>
-<div class="statsgrid-container">
-  <div><i class="fa-solid fa-plane-arrival"></i>Average Landing Rate<br>-232 fpm</div>
-  <div><i class="fa-solid fa-plane-departure"></i>Flights<br>398</div>  
-  <div><i class="fa-solid fa-timer"></i>Flight Hours<br>951</div>
-    <div><i class="fa-solid fa-globe"></i>Distance Flown<br>380,917 nm</div>
-</div>
-        <br><br>
-  <div class="discord-container">
-      <div><b>Welcome</b><br>
-Welcome to BlueStar airlines. We operate our airline in North America and Europe. Join our discord if you are interested in discussing more about our fleet, and how we operate in the persistent multiplayer airline manager "Fly The World".
-          <br><br><br>
-          <b>New Interface</b><br>
-          BlueStar has recently opted to offer 2 options of flight for our pilots. The airline has most recently adopted the persistent economic manager called Fly The World- a completely free VA manager, with a virtual economy comprised of thousands of airlines and pilots. The wonderful team at Aiena e.V. power the platform and work hard for our enjoyment. Some legacy pilots remain on the payware, subscription based platform but have the option to migrate to the new platform. Our goal is to create a completely free, virtual airline while challenging ourselves in a persistent economic airline manager. Both of our operations in these addons are detailed further in our airline policies.<br><br><br>
-          
-          <b>Simulator Support</b><br>
-          FSX<br>
-          X-Plane<br>
-          Prepar3D<br>
-          Microsoft Flight Simulator 2020<br><br><br>
-          
-          <b>Routes and Destinations</b><br>
-          BlueStar's routes are extremely flexible to account for real life incidents. We have a team of dispatchers on our staff, ready to get you in the skies within minutes of your route request. We can predetermine a route for you, or you can chose the route you fly that day. Our routes are optimized for our fleets and we continue to adjust our destinations based on seasons, travel variations and our pilots desires. We rotate our general aviation fleet throughout the world, so that pilots can enjoy all of the beautiful sceneries that our simulators have to offer. <br><br><br>
-          
-          <b>Aircraft Fleet</b><br>
-          BlueStar has a diverse, large fleet. Whether you like to field hop in a Piper Arrow, Cessna 172, or Kodiak- Or you can hop in one of our airliners that range from the Bombardier CRJ700 to the Boeing 767-300ER. BlueStar is expanding our fleet as we hire new talent, so your input and desires are listened to when shaping our fleet and route network. Head over to our hangar to check out the fleet. 
-          
-          
-      <br><br><br>
-      If you are interested in learning more, jump in our discord. We welcome all levels of simmers, from novice to senior captains. We have a staff member ready to get you onboard and flying for us today!
-      <br><br>
-      
-      </div>
-      
-  <div><iframe src="https://discord.com/widget?id=814999570177196042&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
-</div>
-    </div>
-   <br><br><br>
-     <h2>Many thanks for the support teams at:</h2>
-<div class="section3-container">
-    <div><b><a href="https://www.ftw-sim.de/signup/">Join Fly The World</a></b><br><br>
-       <img src="https://user-images.githubusercontent.com/83706649/157447593-215e61f2-e198-46ff-b945-8630c383e21e.png"></div>
-    <div><b>VATSIM</b><br><br>
-      <img src="https://user-images.githubusercontent.com/83706649/157682308-162a5176-2985-49c7-8fcd-74a9685bed40.png"><br>
-        <b>FSHub</b><br><br>
-    <img src="https://user-images.githubusercontent.com/83706649/158384412-b891b0ca-6be1-4824-a424-da461bbb1305.png"></div>
-    
-      <!--^^^^^^^^^^^^^^^^^^^^^^^^^-->
-    </div>
-</body>
+        vvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
 
+        <div class="fleetmain">
+
+<div id="myBtnContainer">
+  <button class="fleetbtn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="fleetbtn" onclick="filterSelection('ga')"> General Aviation</button>
+  <button class="fleetbtn" onclick="filterSelection('airliner')"> Airliners</button>
+  <button class="fleetbtn" onclick="filterSelection('helo')"> Rotary Wing</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="fleetrow">
+  <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439607-cc34ae5b-89e9-4911-a09c-aa18f34c0f12.png" alt="C208" style="width:100%">
+      <h4>A20N / Airbus A320neo</h4>
+     <p>
+      <a href="https://drive.google.com/drive/folders/1ZCjsWZ5oxAHtFgO5r0Cgfq_hFx-XIGTT?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+      <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/173232640-686972d8-8b96-4344-8aa6-6f4818cabc02.png" alt="C208" style="width:100%">
+      <h4>A320 / Airbus A320ceo</h4>
+     <p>
+      <a href="https://drive.google.com/drive/folders/1EIDFKlS3pQ7DgRcqaB4br1-nxdz2buMg?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+    <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://media.discordapp.net/attachments/825763741676077057/940251048377983046/A20N.png" alt="C208" style="width:100%">
+      <h4>A321 / Airbus A321neo</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/1Dto39KzPpKaskbn-VnSdb_Teymh7Nyiy?usp=sharing" target="_blank">Download Livery</a></p>
+    </div><br>
+  </div><br>
+  <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439900-608af645-707b-441b-b626-88753e6a2faa.png" alt="B738" style="width:100%">
+      <h4>B737 / Boeing 737-700</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1vY0IBxnd46GZwcO_odH8byBXyiQ0RGqK?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+  <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439900-608af645-707b-441b-b626-88753e6a2faa.png" alt="B738" style="width:100%">
+      <h4>B738 / Boeing 737-800</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1vY0IBxnd46GZwcO_odH8byBXyiQ0RGqK?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+    <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439123-464d6a4d-95e5-408e-80bb-54ffaf50907b.png" alt="B748" style="width:100%">
+      <h4>B748 / Boeing 747-8i</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1YteWjlHGA0OFT4SJjdBKvGw4aP5_29xB?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+<div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439080-a26d6ef7-1042-4bf6-8aa1-018621527f02.png" alt="B763" style="width:100%">
+      <h4>B763 / Boeing 767-300ER</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1utN7jKY56zzkMiDVqllWG9g4pbSpsDo0?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+    <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439591-6c97e75d-06c2-4e95-8bb5-41af2a9e807e.png" alt="C208" style="width:100%">
+      <h4>CRJ7 / Bombardier CRJ700ER</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1fR5SzTKvK7uMeCRDBR7mEY5cm1K6bDJ_?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+    <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439851-dc88279c-322c-4e87-9808-131d3dc2a8ee.png" alt="C208" style="width:100%">
+      <h4>C25C / Cessna Citation CJ4</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/17sRy9zkenCREbi_neUeHlvHVw98jS-C4?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>                                                                                                                                     
+    <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157441416-87396219-314e-4f07-a5e4-6ffd338262d7.png" alt="C208" style="width:100%">
+      <h4>C700 / Cessna Citation Longitude</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1Y53UMN_gsyn4cX0X78tZA2Mc1uTEbZcc?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+ <div class="fleetcolumn ga">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439871-06978b53-108b-436e-8968-37a0b68299e8.png" alt="C208" style="width:100%">
+      <h4>C172 / Cessna C172 Skyhawk</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/1j7VpkdsA5JXvt9-khV84c9L6Iwjr6KsP?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>                                                                                                                                                                                                                                                                       
+      <div class="fleetcolumn ga">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439871-06978b53-108b-436e-8968-37a0b68299e8.png" alt="C208" style="width:100%">
+      <h4>C208 / Cessna C208B Grand Caravan</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/1Y3r7AE-oNRiOW8jq01nbx4bfWt0nQyS7?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>   
+<div class="fleetcolumn ga">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439871-06978b53-108b-436e-8968-37a0b68299e8.png" alt="C208" style="width:100%">
+      <h4>KODI / Daher Quest Kodiak</h4>
+    <p>
+      <a href="https://drive.google.com/drive/folders/1qO_JM6wzRXpJ2iizNwO2FmmxVL98aolG?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>                                                                                                                                     
+     <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439969-e14fc358-6fd9-46c2-8563-b90ac1905124.png" alt="C208" style="width:100%">
+      <h4>DC6 / Douglas DC-6B</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/17X_xobWMvRgYH2LWQRqSLs4u6Azsa_Pi?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div> 
+ <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439685-b2919c8b-b905-4cd6-92b0-8d2d5923bacf.png" alt="C208" style="width:100%">
+      <h4>DH8D / De Havilland DHC-8-400 Dash-8</h4>
+       <p>
+      <a href="https://drive.google.com/drive/folders/1JTl_kDJtQUpdg82E5_Ll3CJoCRpOLjxY?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>
+     <div class="fleetcolumn helo">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439067-90957022-ff76-43c0-bf21-2426c7dfbf82.jpg" alt="H135" style="width:100%">
+      <h4>H135 / Airbus H135</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/1R_8EcWXx3gL9vqaPKLn2F9PxYT5ztzRh?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div> 
+ <div class="fleetcolumn helo">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439056-7a72e304-dab0-4a79-a7e9-1a011faf19bf.jpg" alt="H145" style="width:100%">
+      <h4>H145 / Airbus H145</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/1EZTS99tbeQ0XozR4_4_qx00W-POr9dy1?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>  
+     <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/157439089-1709092f-aad2-4aed-b3b4-330d72a3a634.png" alt="md80" style="width:100%">
+      <h4>MD82/88 / McDonnell Douglas MD-82/88</h4>
+      <p>
+      <a href="https://drive.google.com/file/d/1JjyZ4q82es_HViJZD6pFx76k1dFwmCCI/view?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>  
+         <div class="fleetcolumn airliner">
+    <div class="fleetcontent">
+      <img src="https://user-images.githubusercontent.com/83706649/173238423-582fce0e-d98b-46a6-b654-83f0f568bee8.png" alt="BAE146" style="width:100%">
+      <h4>British Aerospace / BAE146-100/300</h4>
+      <p>
+      <a href="https://drive.google.com/drive/folders/1pcJCrE-4OO69oQEHMjl40TduZGsJvqeK?usp=sharing" target="_blank">Download Livery</a></p>
+    </div>
+  </div>  
+                                                                                                                                         
+                                                                                                                                         
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("fleetcolumn");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "fleetshow");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "fleetshow");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("fleetbtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
 </html>
