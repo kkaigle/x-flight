@@ -225,6 +225,7 @@ h1 {
     background: url('https://media.discordapp.net/attachments/1187583555975512104/1247705289940013160/AW109SP_-_2024-06-04_20.15.03.png?ex=6662f9da&is=6661a85a&hm=3e1b12eb6e6e1fdb2c29743745ffcc17e94c9ea37160a34929bfff3dd28f659c&=&format=webp&quality=lossless&width=1440&height=603'), rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     background-size: cover;
+    width: 75%;
     padding-bottom: 25%;
     background-position: center;
     filter: blur(0px);
