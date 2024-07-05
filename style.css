@@ -120,13 +120,6 @@ h1 {
   display: none; /* Hide all elements by default */
 }
 
-/* Create a inset container for the main page*/
-.changelog {
-    float: center;
-    margin: auto;
-    width: 75%
-}
-
 /* Clear floats after rows */ 
 .fleetrow:after {
   content: "";
@@ -160,6 +153,86 @@ h1 {
 }
 
 .fleetbtn.active {
+  background-color: #666;
+  color: black;
+  padding: 12px 16px;
+  width: auto;
+}
+
+/* HERE ARE THE STYLES FOR THE INIDEX CHANGELOG*/
+* {
+  box-sizing: border-box;
+}
+
+.changelog {
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 5px 10px 8px #88888;
+  
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.changelogrow {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.chnagelogrow,
+.changelogrow > .changelogcolumn {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.changelogcolumn {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Create a inset container for the main page*/
+.changelog {
+    float: center;
+    margin: auto;
+    width: 75%
+}
+
+/* Clear floats after rows */ 
+.chnagelog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.chnagelogcontent {
+  background-color: #547F97;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* The "show" class is added to the filtered elements */
+.changelogshow {
+  display: block;
+}
+
+/* Style the buttons */
+.chnagelogbtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.changelogbtn:hover {
+  background-color: #ddd;
+}
+
+.changelogbtn.active {
   background-color: #666;
   color: black;
   padding: 12px 16px;
