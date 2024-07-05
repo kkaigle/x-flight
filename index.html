@@ -20,12 +20,23 @@
         <!--This is the content of the page, when creating a new page, only change this
         vvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
 
-        Welcome to X-Flight<br><br>
+        <h1>Welcome to X-Flight.org</h1><br><br>
+
+
+        <div class="fleetmain">
+
+<div id="myBtnContainer">
+  <button class="changelogbtn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="fleetbtn" onclick="filterSelection('ga')"> General Aviation</button>
+  <button class="fleetbtn" onclick="filterSelection('airliner')"> Airliners</button>
+  <button class="fleetbtn" onclick="filterSelection('helo')"> Rotary Wing</button>
+  <button class="fleetbtn" onclick="filterSelection('wip')"> Work In Progress</button>
+</div>
 Recent Updates
-    </div>
+    <!-- Updates Grid -->
     <div class="changelog">
-             <div class="fleetcolumn ga">
-    <div class="fleetcontent">
+             <div class="changelogcolumn liveries">
+    <div class="changelogcontent">
         <h3>7.4.2024<h3><br>
             <h4>
           Piper PA28 Arrow  Version 1.0 (Initial Release)<br>
@@ -35,9 +46,6 @@ Recent Updates
       </h4>
     </div>
   </div>  
-                                                                                                                                         
-                                                                                                                                         
-
 <!-- END GRID -->
 </div>
 
