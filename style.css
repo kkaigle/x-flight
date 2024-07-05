@@ -120,6 +120,12 @@ h1 {
   display: none; /* Hide all elements by default */
 }
 
+/* Create a inset container for the main page*/
+.changelog {
+    float: center;
+    width: 75%
+}
+
 /* Clear floats after rows */ 
 .fleetrow:after {
   content: "";
