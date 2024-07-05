@@ -123,6 +123,7 @@ h1 {
 /* Create a inset container for the main page*/
 .changelog {
     float: center;
+    margin: auto;
     width: 75%
 }
 
