@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--This imports the "Lato" font to the website-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <!--This is the common style file for the website-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--This script manage the header & footer-->
+    <script src="template-manager.js"></script>
+
+    <!--Set the title here
+    vvvvvvvvvvvvvvvvvvvvvvv-->                                  
+
+    </head>
+<body>
+    <div class="content">
+        <!--This is the content of the page, when creating a new page, only change this
+        vvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
+
+        <div class="fleetmain">
+
+<div id="myBtnContainer">
+  <button class="fleetbtn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="fleetbtn" onclick="filterSelection('R')"> Released</button>
+  <button class="fleetbtn" onclick="filterSelection('P')"> Work In Progress</button>
+</div>
+Report any issues to lordrupert on discord :)
+<!-- Portfolio Gallery Grid -->
+<div class="fleetrow">
+             <div class="fleetcolumn r">
+    <div class="fleetcontent">
+      <img src="./JF_PA28_Arrow - 2024-07-04 18.29.23.png" alt="PA28" style="width:100%">
+      <h4>Ocean Reef Club<b>07FA</h4>
+      <p>
+      <a href="https://flightsim.to/file/67679/bluestar-airlines-airbus-a300-600r-n105bs-passenger-2023" target="_blank">Download Livery</a></p>
+    </div>
+  </div>  
+</div>                                                                                                                         
+Planned liveries as of 7/4/24:<br>
+            All Default Laminar Aircraft (livery pack)<br>
+            Rotate MD-11<br>
+            FlightFactor A320ceo<br>
+            ToLiss Airbus Family<br>
+            LES DC3<br>
+            TorqueSim SR22<br>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("fleetcolumn");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "fleetshow");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "fleetshow");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("fleetbtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
