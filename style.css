@@ -305,6 +305,7 @@ h1 {
     background: url('./AS350 - 2024-06-04 19.29.50.png'), rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     background-size: cover;
+    background-color: blue;
     height: 150px;
     padding-bottom: 25%;
     background-position: center;
